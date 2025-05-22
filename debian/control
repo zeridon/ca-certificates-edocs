@@ -1,0 +1,19 @@
+Source: ca-certificates-edocs
+Section: misc
+Priority: optional
+Maintainer: Vladimir Vitkov <vvitkov@gmail.com>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.4.1
+Homepage: https://zeridon.github.io/ca-certificates-edocs/
+Vcs-Browser: https://github.com/zeridon/ca-certificates-edocs
+Vcs-Git: https://github.com/zeridon/ca-certificates-edocs.git
+
+Package: ca-certificates-edocs
+Architecture: all
+Depends: ${misc:Depends}, ca-certificates (>= 20160104)
+Description: eDocs Bulgaria root certificates
+ This package provides eDocs (sub-)root certificates in PEM format.
+ Root certificates allow SSL-based applications to check for the
+ authenticity of certificates issued by the eDocs authority.
+ .
+ eDocs is a Bulgarian official eID issuer with full eIDAS compliance.
